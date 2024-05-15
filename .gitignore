@@ -1,5 +1,5 @@
 x64/
 ChangeTransparent/x64/
-x86/
-ChangeTransparent/x86/
+Release/
+ChangeTransparent/Release/
 .vs/

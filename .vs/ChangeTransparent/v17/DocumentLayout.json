@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\sc2\\c\u002B\u002B\\ChangeTransparent\\",
+  "WorkspaceRootPath": "F:\\sc2\\c\u002B\u002B\\UTYTransparent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F657EEAA-C97B-4917-A8B5-C847F022A3A3}|ChangeTransparent\\ChangeTransparent.vcxproj|F:\\sc2\\c\u002B\u002B\\ChangeTransparent\\ChangeTransparent\\ChangeTransparent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F657EEAA-C97B-4917-A8B5-C847F022A3A3}|ChangeTransparent\\ChangeTransparent.vcxproj|F:\\sc2\\c\u002B\u002B\\UTYTransparent\\ChangeTransparent\\ChangeTransparent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F657EEAA-C97B-4917-A8B5-C847F022A3A3}|ChangeTransparent\\ChangeTransparent.vcxproj|solutionrelative:ChangeTransparent\\ChangeTransparent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ChangeTransparent.cpp",
-              "DocumentMoniker": "F:\\sc2\\c\u002B\u002B\\ChangeTransparent\\ChangeTransparent\\ChangeTransparent.cpp",
+              "DocumentMoniker": "F:\\sc2\\c\u002B\u002B\\UTYTransparent\\ChangeTransparent\\ChangeTransparent.cpp",
               "RelativeDocumentMoniker": "ChangeTransparent\\ChangeTransparent.cpp",
-              "ToolTip": "F:\\sc2\\c\u002B\u002B\\ChangeTransparent\\ChangeTransparent\\ChangeTransparent.cpp",
+              "ToolTip": "F:\\sc2\\c\u002B\u002B\\UTYTransparent\\ChangeTransparent\\ChangeTransparent.cpp",
               "RelativeToolTip": "ChangeTransparent\\ChangeTransparent.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAIAAAATAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-15T14:21:51.202Z",
               "EditorCaption": ""
