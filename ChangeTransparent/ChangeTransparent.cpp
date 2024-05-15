@@ -5,6 +5,7 @@
 #include <windows.h>
 #include <tchar.h>
 #include <winuser.h>
+#include "WinAPI.h"
 
 // #define GET_CLASS_NAME
 
@@ -15,6 +16,7 @@ void PrintLastError()
 
 int main()
 {
+    system("mode con cols=100 lines=20 | title ChangeTransparent");
     //std::cout << "Hello World!\n";
     std::cout << "Finding Undertale Yellow...";
     HWND UTY = FindWindowA("YYGameMakerYY", "Undertale Yellow");
@@ -27,14 +29,10 @@ int main()
     }
 
 #ifdef GET_CLASS_NAME
-    TCHAR className[MAX_PATH];
-    TCHAR ok[MAX_PATH];
-    GetClassName(UTY, className, _countof(ok));
-    _tprintf(_T("\nClass Name is: %s\n"), className);
+    _tprintf(_T("\nClass Name is: %s\n"), WinAPI::GetClassNameFromWindow(UTY));
 #else
     std::cout << "\nFound it!";
-    // https://stackoverflow.com/questions/44267625/invalid-parameter-error-on-setlayeredwindowattributes
-    SetLastError(0);
+    /*SetLastError(0);
     int winFlags = (int)GetWindowLongPtr(UTY, GWL_EXSTYLE);
     if (winFlags == 0)
     {
@@ -56,16 +54,16 @@ int main()
                 return -1;
             }
         }
-    }
+    }*/
     int r, g, b;
     printf("\nPlease Enter RGB Values to make it transparent. (Example: 255 255 255)\nIf you want to disable this, type anything.\n> ");
     scanf_s("%d %d %d", &r, &g, &b);
     std::cout << "\nSetting Window's Attributes...";
-    bool result = SetLayeredWindowAttributes(UTY, RGB(r, g, b), 0, LWA_COLORKEY);
+    // bool result = SetLayeredWindowAttributes(UTY, RGB(r, g, b), 0, LWA_COLORKEY);
+    bool result = WinAPI::SetWindowColorAlpha(UTY, RGB(r, g, b), 0);
     if (result)
     {
         std::cout << "\n\nDone.\nPlease Remember to Close The Game with ALT + F4 or Task Manager.\n\n";
-        return 0;
     }
     else
     {
